@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="../Css/index.css">
+    <script src="../Scripts/index.js"></script>
+  </head>
+  <body onload="startGame();">
+    <h1 align = "center">Welcome to TicTacToe</h1>
+    <form>
+      Player VS Player
+    <input type="radio" name="radio" onclick="startGame();">
+    Player VS Computer
+    <input type="radio" name="radio" onclick="startGameComputer();">
+    <input type="button" name="start" id="button"  value="Start/Restart" onclick = "window.location.reload()">
+    <input type="button" name="" value="PlayAgain" id="button1" onclick="window.location.reload()">
+    </form>
+    <br>
+    <span id = "time"></span>
+    <table id = "table">
+      <tr>
+        <td class="game" onclick= "nextClick(this);"></td>
+        <td class="game" onclick= "nextClick(this);"></td>
+        <td class="game" onclick= "nextClick(this);"></td>
+      </tr>
+      <tr>
+        <td class="game" onclick= "nextClick(this);"></td>
+        <td class="game" onclick= "nextClick(this);"></td>
+        <td class="game" onclick= "nextClick(this);"></td>
+      </tr>
+      <tr>
+        <td class="game" onclick= "nextClick(this);"></td>
+        <td class="game" onclick= "nextClick(this);"></td>
+        <td class="game" onclick= "nextClick(this);"></td>
+      </tr>
+    </table>
+    <br>
+    <h3><span align = "center" id ="msg">Messages!!</span></h3>
+
+  </body>
+</html>
